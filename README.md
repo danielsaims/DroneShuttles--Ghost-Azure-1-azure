@@ -8,7 +8,7 @@ This is a Proof of Concept for their new website which will be hosted on the "Gh
 
 ## Demo
 
-You can play with the demo web app: https://droneshuttles.xyz. 
+You can play with the DroneShuttles demo web app: https://droneshuttles.xyz. 
 
 ![Website Fronte Page](https://user-images.githubusercontent.com/82387743/151858924-cd9707ca-9898-45a1-b153-d22f25afcdda.png)
 
