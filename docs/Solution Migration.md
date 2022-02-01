@@ -17,10 +17,15 @@ subservice: migrate and mordenisation
 - **Scale.** As the business grows successfully, DroneShuttles IT must provide systems that are able to grow at the same pace. x 4 load
 - **Reduce costs.** Contoso wants to minimize licensing costs.
 
+![image](https://user-images.githubusercontent.com/82387743/151895671-90592486-aecc-472a-a59f-41d8f3faa57a.png)
+
 
 ## Migration goals
 
 To help determine the best migration method, the DroneShuttles requiremnets where mapped to certain goals:
+
+![image](https://user-images.githubusercontent.com/82387743/151895646-c8a17b07-aa40-4764-a118-9d1feb012a3c.png)
+
 
 | Requirements | Details |
 | --- | --- |
@@ -32,3 +37,7 @@ To help determine the best migration method, the DroneShuttles requiremnets wher
 ## Solution design
 
 After pinning down their goals and requirements, DroneShuttles is presented with designs and reviews a deployment solution. They also identify the migration process, including the Azure services that they'll use for the migration.
+
+### Current application
+
+![image](https://user-images.githubusercontent.com/82387743/151895618-c070a3d1-3b1a-4321-9405-345761e0a4c8.png)
