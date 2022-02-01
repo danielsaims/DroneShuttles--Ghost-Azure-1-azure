@@ -15,4 +15,5 @@ You can play with the DroneShuttles demo web app: https://droneshuttles.xyz.
 
 [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FRadoslavGatev%2FGhost-Azure%2Fazure%2Fazuredeploy.json)
 
-
+## Solution
+For more details on the solution implemented please visit [here](https://github.com/danielsaims/DroneShuttles--Ghost-Azure-1-azure/blob/master/docs/Solution%20Migration.md)
