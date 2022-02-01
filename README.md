@@ -17,3 +17,7 @@ You can play with the DroneShuttles demo web app: https://droneshuttles.xyz.
 
 ## Solution
 For more details on the solution implemented please visit [here](https://github.com/danielsaims/DroneShuttles--Ghost-Azure-1-azure/blob/master/docs/Solution%20Migration.md)
+
+
+## Presentation
+Visit Here: 
