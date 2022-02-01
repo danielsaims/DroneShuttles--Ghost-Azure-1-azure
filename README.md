@@ -1,8 +1,8 @@
 # Drone Shuttles Ghost-Azure 
 
-The customer Drone Shuttles Ltd. is currently running their website on an outdated platform, As part of their ongoing modernization process, they decided they want to use the Ghost Blog platform
-for their marketing efforts.
-This is a Proof of Concept for their new website which will be hosted on the ghost Platform.
+The customer Drone Shuttles Ltd. is currently running their website on an outdated platform, As part of their ongoing modernization process, they decided they want to use the Ghost Blog platform for their marketing efforts.
+
+This is a Proof of Concept for their new website which will be hosted on the "Ghost Blog Platform".
 
 
 ## Demo
