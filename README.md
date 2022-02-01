@@ -20,4 +20,5 @@ For more details on the solution implemented please visit [here](https://github.
 
 
 ## Presentation
-Visit Here: 
+For more details on the presenataion please visit [here](https://github.com/danielsaims/DroneShuttles--Ghost-Azure-1-azure/blob/master/docs/Presentation.gif)
+
