@@ -9,6 +9,8 @@ This is a Proof of Concept for their new website which will be hosted on the "Gh
 
 You can play with the DroneShuttles demo web app: https://droneshuttles.xyz. 
 
+![Website Fronte Page](https://user-images.githubusercontent.com/82387743/152019292-15bd440c-dfdc-466e-9d0f-a9e7eb0a6d23.png)
+
 ### One-click deploy
 
 [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FRadoslavGatev%2FGhost-Azure%2Fazure%2Fazuredeploy.json)
