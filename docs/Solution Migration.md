@@ -6,8 +6,13 @@ topic: proof of concept
 service: cloud-adoption-framework
 subservice: migrate and mordenisation
 ---
+![image_3f_49](https://user-images.githubusercontent.com/82387743/152010796-41ca9624-3a4e-4405-aa05-c1ee65d22bc2.png)
 
-![image (3)f](https://user-images.githubusercontent.com/82387743/151999215-ccecc44d-3cba-4096-93f6-9bf4e9fbe416.png)
+
+# The Challenge 
+
+Drone Shuttle’s website runs on outdated platform in their datacenter; they are launching new products which will lead to more social media presence and traffic with a blog platform. They decided they want to use the Ghost Blog platform for their marketing efforts. 
+The Task is to deliver a Proof of Concept for their new website.
 
 ## Business drivers
 
@@ -54,6 +59,28 @@ It modernizes an application into a resilient, highly scalable, independently de
 
 -	Migrate the front-end website to the Web Apps feature of Azure App Service.
 -	Migrate PostgreSQL to Azure Database for PostgreSQL (a managed database service for app development and deployment).
+
+
+
+## Solution review
+An  evaluation of proposed design by putting together a pros and cons list, as shown in the following table:
+
+| Consideration | Details |
+| --- | --- |
+| **Pros** | The DroneShuttles web application will be built via GhostBlog platform for deployemnt migration to Azure. <br><br> After the deployemnt, Windows Server won't need to be supported. For more information, see the [Microsoft Lifecycle Policy](/lifecycle/). <br><br> DroneShuttles can configure the web tier of the application with multiple instances, so that the web tier is no longer a single point of failure. <br><br> The database will no longer depend on the aging SQL Server. <br><br> Azure SQL Database has built-in fault tolerance that DroneShuttles doesn't have to set up. This ensures that the data tier is no longer a single point of failover. <br><br> If DroneShuttles uses Azure Database Migration Service to migrate their database, it will have the infrastructure ready for migrating databases at scale. |
+| **Cons** | Azure App Service supports only one application deployment for each web app. <br><br> Requires Platform Expertise | 
+
+### Determine costs
+
+To determine costs and the potential savings of Azure migration, made  use the [total cost of ownership (TCO) calculator](https://azure.microsoft.com/pricing/tco/calculator/) to calculate and compare the TCO for Azure to a comparable on-premises deployment.
+
+Over 5 year(s) with Microsoft Azure, the estimated cost savings could be as much as **€75,261**
+                              
+                                                **Total on-premises vs. Azure cost over time**
+![image](https://user-images.githubusercontent.com/82387743/152008685-3bb179bd-b657-49cd-bcd3-c96bce15a117.png)
+
+![image](https://user-images.githubusercontent.com/82387743/152009045-37f0395d-db8c-484c-8c9b-7f4348404ee1.png)
+
 
 
 ## Proposed architecture
@@ -110,10 +137,7 @@ DroneShuttles completes the migration process as follows:
 | [Azure Traffic Manager](https://azure.microsoft.com/services/traffic-manager/) | A load balancer that uses Domain Name System (DNS) to direct users to Azure or to external websites and services. | Pricing is based on the number of received DNS queries and the number of monitored endpoints. [Learn more](https://azure.microsoft.com/pricing/details/traffic-manager/). |
 | [Azure Database Migration Service](/azure/dms/dms-overview) | Azure Database Migration Service enables seamless migration from multiple database sources to Azure data platforms, with minimal downtime. | Learn about [supported regions](/azure/dms/dms-overview#regional-availability) and [Database Migration Service pricing](https://azure.microsoft.com/pricing/details/database-migration/). |
 | [Azure Database for MySQL](/azure/mysql/) | The database is based on the open-source MySQL database engine. It provides a fully managed, enterprise-ready community MySQL database for application development and deployment. | Pricing is based on compute, storage, and backup requirements. [Learn more](https://azure.microsoft.com/pricing/details/mysql/server/). |
-
-
-
-
+| [Azure Monitor](/azure/azure-monitor/) | This information helps you understand how your applications are performing and proactively identify issues affecting them and the resources they depend on.. [Learn more](https://azure.microsoft.com/en-us/services/monitor/). |Pricing is based on the amount of monitoring data you collect. You pay an additional fee based on the number and types of alert rules and notifications you use
 
 
 ## Scenario steps
@@ -138,12 +162,12 @@ This to ensure that the database traffic can't be hacked. [Learn more](/azure/my
 
 ### Backups
 
-Azure Database for MySQL automatically creates server backups and stores.(/azure/mysql/concepts-backup).
+Azure Database for MySQL automatically creates server backups and stores.[Learn more](/azure/mysql/concepts-backup).
 
 ### Licensing and cost optimization
 
 - There are no licensing issues for the PaaS deployment.
 - DroneShuttles  use [Azure Cost Management + Billing](/azure/cost-management-billing/cost-management-billing-overview) to ensure that they stay within the budgets established by their IT leadership.
 
-## Review the deployment
-DroneShuttles refactored the web application in Azure by building the webapp via Ghost Blog to two Azure App Service web apps. The application  database then will migrated/built to Azure SQL Database.
+## Conclusion
+Visit https://www.droneshuttles.xyz/ for a Demo of the Web App
