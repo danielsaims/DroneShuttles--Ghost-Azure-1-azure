@@ -39,9 +39,9 @@ To help determine the best migration method, the DroneShuttles requiremnets wher
 
 ## Solution design
 
-After pinning down their goals and requirements, presented is a deployment solution. This includes the migration process, including the Azure services that they'll use for the migration.
+After pinning down their goals and requirements, I present  a deployment solution. This includes the migration process, including the Azure services that they'll use for the migration.
 
-### Current application assumptions
+### Current Application Assumptions
 
 ![image](https://user-images.githubusercontent.com/82387743/151895618-c070a3d1-3b1a-4321-9405-345761e0a4c8.png)
 
@@ -51,10 +51,10 @@ After pinning down their goals and requirements, presented is a deployment solut
 
 
 ### Migration Methodology.
-With the assessment complete, DroneShuttles needs to identify tools to move its applications, data, and infrastructure to Azure.
+With the assessment complete, I then   identify tools to move its applications, data, and infrastructure to Azure.
 
 A simple **“lift and shift migration” (IAAS)** could have been chosen but given the fact that the requirements of the website and to fully **maximize the potential of the azure cloud capabilities** - the solution focused on also the future and did not see the need for 5 Devops Engineer on the website which will already be using a platform like Ghost that has a SAAS option. So  **PAAS serveless**  option was chosen
-The main functionality stays the same with a different architecture; a **revamp**  totally in the cloud. 
+The main functionality stays the same with a different architecture; a **REVAMP**  totally in the cloud. 
 It modernizes an application into a resilient, highly scalable, independently deployable architecture.
 
 -	Migrate the front-end website to the Web Apps feature of Azure App Service.
