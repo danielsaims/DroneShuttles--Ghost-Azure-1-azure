@@ -1,3 +1,4 @@
+![drone 256x256](https://user-images.githubusercontent.com/82387743/152200558-72e33f7b-fbe7-49b8-bdfd-b3f51f7d8d01.png)
 # Drone Shuttles Ghost-Azure 
 
 The customer Drone Shuttles Ltd. is currently running their website on an outdated platform, As part of their ongoing modernization process, they decided they want to use the Ghost Blog platform for their marketing efforts.
@@ -5,7 +6,7 @@ The customer Drone Shuttles Ltd. is currently running their website on an outdat
 This is a Proof of Concept for their new website which will be hosted on the "Ghost Blog Platform".
 
 
-## Demo
+## Demo 💻
 
 You can play with the DroneShuttles demo web app: https://droneshuttles.xyz. 
 
@@ -15,10 +16,10 @@ You can play with the DroneShuttles demo web app: https://droneshuttles.xyz.
 
 [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FRadoslavGatev%2FGhost-Azure%2Fazure%2Fazuredeploy.json)
 
-## Solution
+## Solution 🖲️
 For more details on the solution implemented please visit [here](https://github.com/danielsaims/DroneShuttles--Ghost-Azure-1-azure/blob/master/docs/Solution%20Migration.md)
 
 
-## Presentation
+## Presentation 🤖
 For more details on the presenataion please visit [here](https://github.com/danielsaims/DroneShuttles--Ghost-Azure-1-azure/blob/master/docs/Presentation.gif)
 
