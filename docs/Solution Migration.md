@@ -127,6 +127,7 @@ DroneShuttles completes the migration process as follows:
 
 ![Untitled Diagram drawio (3)](https://user-images.githubusercontent.com/82387743/151995871-eaab057e-6dae-4aaa-9660-cd645d559813.png)
 
+![image](https://user-images.githubusercontent.com/82387743/152198255-480cf6c9-b584-41db-8f93-c57bc0b6dcec.png)
 
 
 ### Azure services
