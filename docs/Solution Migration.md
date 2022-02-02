@@ -9,12 +9,12 @@ subservice: migrate and mordenisation
 ![image_3f_49](https://user-images.githubusercontent.com/82387743/152010796-41ca9624-3a4e-4405-aa05-c1ee65d22bc2.png)
 
 
-# The Challenge 
+# The Challenge �❓
 
 Drone Shuttle’s website runs on outdated platform in their datacenter; they are launching new products which will lead to more social media presence and traffic with a blog platform. They decided they want to use the Ghost Blog platform for their marketing efforts. 
 The Task is to deliver a Proof of Concept for their new website.
 
-## Business drivers
+## Business drivers 📃
 
 
 - **Address business growth.** DroneShuttles is growing and releasing new products, and they currently run on their own on-premises systems and infrastructure.
@@ -24,7 +24,7 @@ The Task is to deliver a Proof of Concept for their new website.
 - **Future Proof.** DroneShuttles wants to optimize licensing costs.
 
 
-## Migration goals
+## Migration goals 🥅
 
 To help determine the best migration method, the DroneShuttles requiremnets where mapped to certain goals:
 
@@ -37,11 +37,11 @@ To help determine the best migration method, the DroneShuttles requiremnets wher
 | **Azure** | DroneShuttles wants to move it's application to the cloud, Azure. |
 | **DevOps** | DroneShuttles wants to move to a DevOps model that uses Azure DevOps for their builds and release pipelines. |
 
-## Solution design
+## Solution design 🧑‍🎨
 
 After pinning down their goals and requirements, I present  a deployment solution. This includes the migration process, including the Azure services that they'll use for the migration.
 
-### Current Application Assumptions
+### Current Application Assumptions 📱
 
 ![image](https://user-images.githubusercontent.com/82387743/151895618-c070a3d1-3b1a-4321-9405-345761e0a4c8.png)
 
@@ -50,7 +50,7 @@ After pinning down their goals and requirements, I present  a deployment solutio
 -	Stores the images uploaded to or created from the application using network file storage. Is hosted on single instance server.
 
 
-### Migration Methodology.
+### Migration Methodology ⌨️ 
 With the assessment complete, I then   identify tools to move its applications, data, and infrastructure to Azure.
 
 A simple **“lift and shift migration” (IAAS)** could have been chosen but given the fact that the requirements of the website and to fully **maximize the potential of the azure cloud capabilities** - the solution focused on also the future and did not see the need for 5 Devops Engineer on the website which will already be using a platform like Ghost that has a SAAS option. So  **PAAS serveless**  option was chosen
@@ -62,7 +62,7 @@ It modernizes an application into a resilient, highly scalable, independently de
 
 
 
-## Solution review
+## Solution review 👨‍💻
 An  evaluation of proposed design by putting together a pros and cons list, as shown in the following table:
 
 | Consideration | Details |
@@ -70,7 +70,8 @@ An  evaluation of proposed design by putting together a pros and cons list, as s
 | **Pros** | The DroneShuttles web application will be built via GhostBlog platform for deployemnt migration to Azure. <br><br> After the deployemnt, Windows Server won't need to be supported. For more information, see the [Microsoft Lifecycle Policy](/lifecycle/). <br><br> DroneShuttles can configure the web tier of the application with multiple instances, so that the web tier is no longer a single point of failure. <br><br> The database will no longer depend on the aging SQL Server. <br><br> Azure SQL Database has built-in fault tolerance that DroneShuttles doesn't have to set up. This ensures that the data tier is no longer a single point of failover. <br><br> If DroneShuttles uses Azure Database Migration Service to migrate their database, it will have the infrastructure ready for migrating databases at scale. |
 | **Cons** | Azure App Service supports only one application deployment for each web app. <br><br> Requires Platform Expertise | 
 
-### Determine costs
+### Determine costs 💶
+
 
 To determine costs and the potential savings of Azure migration, made  use the [total cost of ownership (TCO) calculator](https://azure.microsoft.com/pricing/tco/calculator/) to calculate and compare the TCO for Azure to a comparable on-premises deployment.
 
@@ -83,7 +84,7 @@ Over 5 year(s) with Microsoft Azure, the estimated cost savings could be as much
 
 
 
-## Proposed architecture
+## Proposed architecture ☁️
 
 Here's the proposed architecture:
 
@@ -102,7 +103,7 @@ Here's the proposed architecture:
 
 ![Untitled Diagram drawio (2)](https://user-images.githubusercontent.com/82387743/151984124-5652b3d1-8ad0-4b02-be87-9e73995c706f.png)
 
-### Basic Architecture Overiew
+### Basic Architecture Overiew ☁️
 
 ![image](https://user-images.githubusercontent.com/82387743/151985504-fc79ae70-19c6-4de5-b6d0-a98075293673.png)
 
@@ -113,7 +114,7 @@ Here's the proposed architecture:
   4. Web App connects to SQL Database and Azure Cache for Redis for better performance.
   5. Browser pulls resourcesfrom Azure Content Delivery Network to reduce load time.
 
-### Migration process
+### Migration process ↔️
 
 DroneShuttles completes the migration process as follows:
 
@@ -130,7 +131,7 @@ DroneShuttles completes the migration process as follows:
 ![image](https://user-images.githubusercontent.com/82387743/152198255-480cf6c9-b584-41db-8f93-c57bc0b6dcec.png)
 
 
-### Azure services
+### Azure services ✔️
 
 | Service | Description | Cost |
 | --- | --- | --- |
@@ -141,7 +142,7 @@ DroneShuttles completes the migration process as follows:
 | [Azure Monitor](/azure/azure-monitor/) | This information helps you understand how your applications are performing and proactively identify issues affecting them and the resources they depend on.. [Learn more](https://azure.microsoft.com/en-us/services/monitor/). |Pricing is based on the amount of monitoring data you collect. You pay an additional fee based on the number and types of alert rules and notifications you use
 
 
-## Scenario steps
+## Scenario steps 📶
 
 Here's the DroneShuttles plan for completing the migration:
 >
@@ -152,11 +153,11 @@ Here's the DroneShuttles plan for completing the migration:
 > - **Step 5: Set up GitHub**.  set up a local GitHub repository for the application web sites that was built using *Ghost Blog Platform* and code.
 > - **Step 6: Configure the web apps**. They configure the web apps with the DroneShuttles websites.
 
-## Review the deployment
+## Review the deployment 🔎
 
 With the application now running, DroneShuttles needs to fully operationalize and secure their new infrastructure.
 
-### Security
+### Security 👮
 
 DroneShuttles reviews the application to determine any security issues. 
 This to ensure that the database traffic can't be hacked. [Learn more](/azure/mysql/howto-configure-ssl).
