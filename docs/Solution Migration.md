@@ -153,6 +153,14 @@ Here's the DroneShuttles plan for completing the migration:
 > - **Step 5: Set up GitHub**.  set up a local GitHub repository for the application web sites that was built using *Ghost Blog Platform* and code.
 > - **Step 6: Configure the web apps**. They configure the web apps with the DroneShuttles websites.
 
+## Implementation on Azure 🔨
+![tf](https://user-images.githubusercontent.com/82387743/152515216-3dfc2d4f-3cd5-4cae-a693-a2870d585004.png)
+
+![reso](https://user-images.githubusercontent.com/82387743/152515237-ea211748-28f0-4939-80e6-8847d31de315.png)
+
+![qweq](https://user-images.githubusercontent.com/82387743/152515561-2eb376ca-e8e2-4544-8c6c-c568e40d7a3f.png)
+
+
 ## Review the deployment 🔎
 
 With the application now running, DroneShuttles needs to fully operationalize and secure their new infrastructure.
